@@ -14,7 +14,7 @@ function openTab(evt, tabName) {
 
   //Makes the selected tab visible
   document.getElementById(tabName).style.display = "block";
-  
+
   //Marks the selected tab's button as active
   evt.currentTarget.className += " active";
 }

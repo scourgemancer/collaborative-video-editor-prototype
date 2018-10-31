@@ -12,9 +12,48 @@ function openTab(evt, tabName) {
     tablink.className = tablink.className.replace(" active", "");
   }
 
-  //Makes the selected tab visible
-  document.getElementById(tabName).style.display = "block";
-
   //Marks the selected tab's button as active
   evt.currentTarget.className += " active";
+
+  //Makes the selected tab visible
+  document.getElementById(tabName).style.display = "block";
+}
+
+/*Create all of the starting content for the tabs*/
+function initializeTabs() {
+  initializeVideosTab();
+  initializeToolsTab();
+  initializeShareTab();
+  initializeChatTab();
+  initializeVideoContainer();
+}
+
+/*Creates the video elements in the videos tab*/
+function initializeVideosTab() {
+  //todo - delete background image in css and implement actual content
+}
+
+/*Creates the categrorie and tool elements*/
+function initializeToolsTab() {
+  //todo - delete background image in css and implement actual content
+}
+
+/*Creates the social media elements*/
+function initializeShareTab() {
+  //todo - delete background image in css and implement actual content
+}
+
+/*Creates the chat container and it's initial messages*/
+function initializeChatTab() {
+  //todo - delete background image in css and implement actual content
+}
+
+/*Creates the initial video container*/
+function initializeVideoContainer() {
+  //todo - delete background image in css and implement actual content
+}
+
+/*Opens a local video in the video container*/
+function openVideo(filename) {
+  //todo - delete background image in css and implement actual content
 }

@@ -1,0 +1,149 @@
+/*Makes the website take up the whole page*/
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*Defines the width and height of all elements*/
+.homepage {
+  display: grid;
+  grid-template-columns: 4fr 100fr 2fr 50fr 4fr;
+  grid-template-rows: 7fr 100fr 3fr 15fr 0.2fr 15fr 1fr 2fr 3fr;
+  height: 100%;
+  width: 100%;
+}
+
+/*Spacing at the top*/
+.header {
+  grid-column-start: span 5;
+}
+
+/*Spacing on the left*/
+.left {
+  grid-row-start: span 7;
+}
+
+/*Video container*/
+.video {
+  background: #444;
+  background-image: url("video.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/*Toolbars container*/
+.toolbar {
+  border: 1px solid #555;
+  color: #AAA;
+}
+
+/*Spacing on the right*/
+.right {
+  grid-row-start: span 7;
+}
+
+/*Spacing underneath the video and tabs*/
+.middle {
+  grid-column-start: span 3;
+}
+
+/*Topmost bar beneath the video*/
+.top-bar {
+  background: #444;
+  grid-column-start: span 3;
+}
+
+/*Spacing between the bars*/
+.bar-spacing {
+  grid-column-start: span 3;
+}
+
+/*Bottommost bar beneath the video*/
+.bottom-bar {
+  background: #444;
+  grid-column-start: span 3;
+}
+
+/*Spacing between the bottommost bar and the scrollbar*/
+.scrollbar-spacing {
+  grid-column-start: span 3;
+}
+
+/*Scrollbar for the two bars above it*/
+.scrollbar {
+  background: #444;
+  grid-column-start: span 3;
+}
+
+/*Spacing at the bottom*/
+.footer {
+  grid-column-start: span 5;
+}
+
+/*Tab container*/
+.tabs {
+  overflow: hidden;
+  width: 100%;
+}
+
+/*Buttons that link to each tab*/
+.tabs button {
+  margin: 0;
+  background-color: inherit;
+  float: left;
+  border: 1px solid black;
+  padding: 0.5em 0;
+  width: 25%;
+  font-size: large;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tabs button:hover {
+  background-color: #ddd;
+}
+.tabs button.active {
+  background-color: #ccc;
+}
+
+/*Tabs themselves*/
+.tabcontent {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+/*Videos tab*/
+#Videos {
+  display: block;
+  background-image: url("videos.PNG");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+/*Tools tab*/
+#Tools {
+  display: block;
+  background-image: url("tools.PNG");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+/*Share tab*/
+#Share {
+  display: block;
+  background-image: url("share.PNG");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+/*Chat tab*/
+#Chat {
+  display: block;
+  background-image: url("chat.PNG");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}

@@ -116,6 +116,14 @@ html, body {
   height: 100%;
 }
 
+.button {
+	background-color: #529ddc;
+	border: none;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px;
+}
+
 /*Videos tab*/
 #Videos {
   display: block;
@@ -135,7 +143,7 @@ html, body {
 /*Share tab*/
 #Share {
   display: block;
-  background-image: url("share.PNG");
+  /*background-image: url("share.PNG");*/
   background-size: 100% 90%;
   background-repeat: no-repeat;
 }

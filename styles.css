@@ -164,7 +164,40 @@ html, body {
 /*Chat tab*/
 #Chat {
   display: block;
-  background-image: url("chat.PNG");
   background-size: 100% 90%;
   background-repeat: no-repeat;
+}
+
+#Chat #chat-box {
+  border: 1px solid black;
+  width: 90%;
+  height: 75%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  border-radius: 0.8em;
+}
+
+#Chat #text-box {
+  margin-top: 1%;
+}
+
+#Chat #text-box #text-area{
+  width: 75%;
+  margin-left: 5%;
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 0.8em;
+  font-size: 14px;
+}
+
+#Chat #text-box #send-button {
+  text-align: center;
+  background-color: #00A6FF;
+  border: none;
+  border-radius: 0.8em;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 10px;
 }

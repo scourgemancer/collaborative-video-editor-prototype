@@ -116,14 +116,6 @@ html, body {
   height: 100%;
 }
 
-.button {
-	background-color: #529ddc;
-	border: none;
-	color: #ffffff;
-	font-size: 22px;
-	padding: 10px;
-}
-
 /*Videos tab*/
 #Videos {
   display: block;
@@ -146,6 +138,27 @@ html, body {
   /*background-image: url("share.PNG");*/
   background-size: 100% 90%;
   background-repeat: no-repeat;
+  font-size: 1.4em;
+  color: #4A5561;
+}
+#Share p {
+  margin: 2em 0 0 0;
+}
+#Share hr {
+  width: 80%;
+}
+#Share img {
+  padding: 1em 0 0.4em 0;
+}
+#Share .button {
+  background-color: #00A6FF;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 0.4em 1.2em;
+  border-radius: 0.8em;
+  margin: 0 0 0 3em;
+  text-decoration: none;
 }
 
 /*Chat tab*/

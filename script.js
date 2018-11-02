@@ -106,7 +106,8 @@ function toolSelect(event, name) {
 
 /*Adds text from the Chat tab's text box to the chat box*/
 function sendMessage() {
-  var text = document.getElementById("text-area").value;
+  var text = document.getElementById("text-area");
   var textbox = document.getElementById("chat-box");
-  textbox.value = textbox.value + "Me: " + text + "\n\n";
+  textbox.value = textbox.value + "Me: " + text.value + "\n\n";
+  text.value = "";
 }

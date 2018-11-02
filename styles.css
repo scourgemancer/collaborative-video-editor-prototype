@@ -113,14 +113,14 @@ html, body {
 .tabcontent {
   display: none;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 2.5em);
 }
 
 /*Videos tab*/
 #Videos {
   display: block;
   background-image: url("videos.PNG");
-  background-size: 100% 90%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -128,16 +128,13 @@ html, body {
 #Tools {
   display: none;
   background-image: url("tools.PNG");
-  background-size: 100% 90%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 /*Share tab*/
 #Share {
   display: none;
-  /*background-image: url("share.PNG");*/
-  background-size: 100% 90%;
-  background-repeat: no-repeat;
   font-size: 1.4em;
   color: #4A5561;
 }
@@ -164,36 +161,29 @@ html, body {
 /*Chat tab*/
 #Chat {
   display: none;
-  background-size: 100% 90%;
-  background-repeat: no-repeat;
 }
 #Chat #chat-box {
-  border: 1px solid black;
+  border: 1px solid #8492a6;
   width: 90%;
-  height: 75%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
+  height: calc(93% - 4em);
+  margin: 4% 5% 2% 5%;
   border-radius: 0.8em;
-}
-#Chat #text-box {
-  /*margin-top: 1%;*/
 }
 #Chat #text-box #text-area{
-  width: 75%;
+  width: calc(90% - 5em);
   margin-left: 5%;
   border: 1px solid black;
-  height: 28px;
+  height: 2em;
   border-radius: 0.8em;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 #Chat #text-box #send-button {
   text-align: center;
-  background-color: #00A6FF;
+  background-color: #007aff;
   border: none;
   border-radius: 0.8em;
-  font-size: 15px;
+  font-size: 1em;
   color: white;
   cursor: pointer;
-  padding: 8px 8px;
+  padding: 0.5em 1em;
 }

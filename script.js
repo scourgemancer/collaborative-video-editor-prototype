@@ -94,5 +94,5 @@ function openBottomBar() {
 function sendMessage() {
   var text = document.getElementById("text-area").value;
   var textbox = document.getElementById("chat-box");
-  textbox.value = textbox.value + "Me: " + text + "\n";
+  textbox.value = textbox.value + "Me: " + text + "\n\n";
 }

@@ -5,14 +5,16 @@ html, body {
   width: 100%;
   overflow: hidden;
 }
+
+
 #videoUtils {
    border: 1px solid #000;
-   width:100%;
+   width: 100%;
    height: 25px;
 }
 #videoUtils a {
   padding: 3px 6px;
-  border-radius:10px;
+  border-radius: 10px;
   background-color: #1D1;
   color: #FFF;
   font-weight: bolder;
@@ -23,36 +25,37 @@ html, body {
   height: 25%;
   margin: 10px auto;
   border: 1px solid #000;
+  overflow: hidden;
 }
 .videoDIV img {
   width: 90px;
-  height:70px;
+  height: 70px;
   position: relative;
-  left:10px;
+  left: 10px;
   top: 10px;
 }
 .videoDIV .name {
   color: #000000;
   position: relative;
-  left:110px;
+  left: 110px;
   top: -80px;
 }
 .videoDIV .length {
   color: #000000;
   position: relative;
-  left:110px;
+  left: 110px;
   top: -95px;
 }
 .videoDIV .date {
   color: #000000;
   position: relative;
-  left:110px;
+  left: 110px;
   top: -110px;
 }
 .videoDIV .size {
   color: #000000;
   position: relative;
-  left:110px;
+  left: 110px;
   top: -125px;
 }
 

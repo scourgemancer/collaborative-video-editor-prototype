@@ -13,9 +13,10 @@ Unsupported features:
 3. Networking in chat and video editing (very high sophistication)
 4. Export a real video
 5. Export a video to a real social platform
-6. Edit tools are not yet usable
+6. Usable edit tools
 7. 3 or more videos added can lead to modified interface
 8. Play or pause a video
 9. See video timeline, and audio timeline
+10. Search for videos
 
 This is a pretty sophisticated product if the all the real functionalities are implemented. The purpose of this prototype is to show the user interface purely. Functionalities may be added in the final prototypes.

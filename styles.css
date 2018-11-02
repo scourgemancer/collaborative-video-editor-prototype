@@ -20,20 +20,14 @@ html, body {
   padding: 0.5em;
 }
 @keyframes notifyOpacity {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
 .notify {
   animation-name: notifyOpacity;
   animation-iteration-count: 1;
-  animation-duration: 0.4s;
+  animation-duration: 1s;
 }
 
 /*Defines the width and height of all elements*/
@@ -144,7 +138,6 @@ html, body {
   display: none;
   width: 100%;
   height: calc(100% - 2.5em);
-  overflow: hidden;
 }
 
 /*Videos tab*/
@@ -174,6 +167,21 @@ html, body {
   width: 2.8em;
   margin-left: 1em;
   cursor: pointer;
+}
+#Tools span {
+  position: relative;
+}
+#Tools span p {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  color: white;
+  border-radius: 0.6em;
+  padding: 0.5em;
+}
+#Tools span:hover p {
+  visibility: visible;
 }
 
 /*Share tab*/

@@ -99,9 +99,9 @@ function toolSelect(event, name) {
   notification.style.zIndex = "1";
   setTimeout(function removeClass() {
     notification.style.zIndex = "-1";
-    notification.classList.remove(".notify");
+    notification.classList.remove("notify");
     notification.innerHTML = "";
-  }, 390);
+  }, 990);
 }
 
 /*Adds text from the Chat tab's text box to the chat box*/

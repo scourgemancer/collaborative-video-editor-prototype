@@ -126,7 +126,7 @@ html, body {
 
 /*Tools tab*/
 #Tools {
-  display: block;
+  display: none;
   background-image: url("tools.PNG");
   background-size: 100% 90%;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ html, body {
 
 /*Share tab*/
 #Share {
-  display: block;
+  display: none;
   /*background-image: url("share.PNG");*/
   background-size: 100% 90%;
   background-repeat: no-repeat;
@@ -163,11 +163,10 @@ html, body {
 
 /*Chat tab*/
 #Chat {
-  display: block;
+  display: none;
   background-size: 100% 90%;
   background-repeat: no-repeat;
 }
-
 #Chat #chat-box {
   border: 1px solid black;
   width: 90%;
@@ -177,11 +176,9 @@ html, body {
   margin-top: 5%;
   border-radius: 0.8em;
 }
-
 #Chat #text-box {
   /*margin-top: 1%;*/
 }
-
 #Chat #text-box #text-area{
   width: 75%;
   margin-left: 5%;
@@ -190,7 +187,6 @@ html, body {
   border-radius: 0.8em;
   font-size: 14px;
 }
-
 #Chat #text-box #send-button {
   text-align: center;
   background-color: #00A6FF;

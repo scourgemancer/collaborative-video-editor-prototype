@@ -1,5 +1,5 @@
 /*Changes the tab currently being viewed*/
-function openTab(evt, tabName) {
+function openTab(event, tabName) {
   //Makes all tab content invisible
   let tabcontents = document.getElementsByClassName("tabcontent");
   for (let tabcontent of tabcontents) {
@@ -13,7 +13,7 @@ function openTab(evt, tabName) {
   }
 
   //Marks the selected tab's button as active
-  evt.currentTarget.className += " active";
+  event.currentTarget.className += " active";
 
   //Makes the selected tab visible
   document.getElementById(tabName).style.display = "block";
@@ -115,8 +115,23 @@ function openBottomBar() {
   //todo - delete css and implement actual content
 }
 
+/*Fired whenever a tool icon is selected by the cursor*/
+function toolSelect(event, name) {
+  let notification = document.getElementById("notification");
+  notification.innerHTML += name + " selected";
+  notification.classList.add("notify");
+  notification.style.zIndex = "1";
+  setTimeout(function removeClass() {
+    notification.style.zIndex = "-1";
+    notification.classList.remove("notify");
+    notification.innerHTML = "";
+  }, 990);
+}
+
+/*Adds text from the Chat tab's text box to the chat box*/
 function sendMessage() {
-  var text = document.getElementById("text-area").value;
+  var text = document.getElementById("text-area");
   var textbox = document.getElementById("chat-box");
-  textbox.value = textbox.value + "Me: " + text + "\n\n";
+  textbox.value = textbox.value + "Me: " + text.value + "\n\n";
+  text.value = "";
 }

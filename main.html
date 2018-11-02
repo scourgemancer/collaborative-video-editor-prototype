@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="styles.css" rel="stylesheet">
-            <script src="script.js" type="text/javascript">
-            </script>
-        </link>
-    </head>
-    <body>
-        <div class="homepage">
-            <div class="header">
-            </div>
-            <div class="left">
-            </div>
-            <div class="video" id="video-container">
-            </div>
-            <div class="center">
-            </div>
-            <div class="toolbar">
-                <div class="tabs">
-                    <button class="tablinks active" onclick="openTab(event, 'Videos')">
-                        Videos
-                    </button>
-                    <button class="tablinks" onclick="openTab(event, 'Tools')">
-                        Tools
-                    </button>
-                    <button class="tablinks" onclick="openTab(event, 'Share')">
-                        Share
-                    </button>
-                    <button class="tablinks" onclick="openTab(event, 'Chat')">
-                        Chat
-                    </button>
-                </div>
-                <div class="tabcontent" id="Videos">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<p id="notification"></p>
+<div class="homepage">
+  <div class="header"></div>
+  <div class="left"></div>
+  <div id="video-container" class="video"></div>
+  <div class="center"></div>
+  <div class="toolbar">
+    <div class="tabs">
+      <button class="tablinks active" onclick="openTab(event, 'Videos')">Videos</button>
+      <button class="tablinks" onclick="openTab(event, 'Tools')">Tools</button>
+      <button class="tablinks" onclick="openTab(event, 'Share')">Share</button>
+      <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
+    </div>
+    <div class="tabcontent" id="Videos">
                     <div id="videoUtils">
                         <a href="#" onclick="addVideo()">
                             +
@@ -49,114 +37,131 @@
                         </p>
                         <p class="date">
                             June 16th, 2018
-                            <p>
+                            </p>
                                 <p class="size">
                                     4mb
                                 </p>
-                            </p>
-                        </p>
                     </div>
               </div>
-                    <div class="tabcontent" id="Tools">
-                    </div>
-                    <div class="tabcontent" id="Share">
-                        <table align="center" style="padding-top: 15px;">
-                            <tr>
-                                <td>
-                                    <select>
-                                        <option>
-                                            MP4
-                                        </option>
-                                        <option>
-                                            MKV
-                                        </option>
-                                        <option>
-                                            MPEG-2
-                                        </option>
-                                        <option>
-                                            MPEG-4
-                                        </option>
-                                        <option>
-                                            AV1
-                                        </option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <a class="button" download="" href="dummy.txt">
-                                        Export
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                        <p align="center">
-                            Share your video
-                        </p>
-                        <hr>
-                            <table>
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.youtube.com">
-                                            <img src="youtube.png" width="50%"/>
-                                        </a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="http://www.facebook.com">
-                                            <img src="facebook.png" width="50%"/>
-                                        </a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="http://www.instagram.com">
-                                            <img src="instagram.png" width="50%"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.dropbox.com">
-                                            <img src="dropbox.png" width="50%"/>
-                                        </a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="http://www.google.com">
-                                            <img src="googledrive.png" width="50%"/>
-                                        </a>
-                                    </td>
-                                    <td align="center">
-                                        <img src="textbubble.png" width="50%"/>
-                                    </td>
-                                </tr>
-                            </table>
-                        </hr>
-                    </div>
-                    <div class="tabcontent" id="Chat">
-                        <textarea id="chat-box" readonly="">
-                        </textarea>
-                        <div id="text-box">
-                            <input id="text-area" placeholder="  Say something..." type="text">
-                                <button id="send-button" onclick="sendMessage()">
-                                    Send
-                                </button>
-                            </input>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                </div>
-                <div class="middle">
-                </div>
-                <div class="top-bar" id="top-bar">
-                </div>
-                <div class="bar-spacing">
-                </div>
-                <div class="bottom-bar" id="bottom-bar">
-                </div>
-                <div class="scrollbar-spacing">
-                </div>
-                <div class="scrollbar" id="scrollbar">
-                </div>
-                <div class="footer">
-                </div>
-            </div>
-        </div>
-    </body>
+    <div id="Tools" class="tabcontent">
+      <p>General Editing</p>
+      <div id="general-editing" class="flex-container">
+        <span>
+          <img src="images/tools-icons/filter.png" onclick="toolSelect(event, 'Filter')"/>
+          <p>Filter</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/cut.png" onclick="toolSelect(event, 'Cut')"/>
+          <p>Cut</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/shrink-stretch.png" onclick="toolSelect(event, 'Shrink / Stretch')"/>
+          <p>Shrink / Stretch</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/crop.png" onclick="toolSelect(event, 'Crop')"/>
+          <p>Crop</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/slow-down.png" onclick="toolSelect(event, 'Slow Down')"/>
+          <p>Slow Down</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/speed-up.png" onclick="toolSelect(event, 'Speed Up')"/>
+          <p>Speed Up</p>
+        </span>
+      </div>
+      <hr>
+      <p>Selecting</p>
+      <div id="selecting" class="flex-container">
+        <span>
+          <img src="images/tools-icons/rectangle-select.png" onclick="toolSelect(event, 'Rectangle Select')"/>
+          <p>Rectangle Select</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/lasso-select.png" onclick="toolSelect(event, 'Lasso Select')"/>
+          <p>Lasso Select</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/wand-select.png" onclick="toolSelect(event, 'Wand Select')"/>
+          <p>Wand Select</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/oval-select.png" onclick="toolSelect(event, 'Oval Select')"/>
+          <p>Oval Select</p>
+        </span>
+      </div>
+      <hr>
+      <p>Adding to Video</p>
+      <div id="adding-to-video" class="flex-container">
+        <span>
+          <img src="images/tools-icons/add-text.png" onclick="toolSelect(event, 'Add Text')"/>
+          <p>Add Text</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/add-image.png" onclick="toolSelect(event, 'Add Image')"/>
+          <p>Add Image</p>
+        </span>
+      </div>
+      <hr>
+      <p>Collaboration</p>
+      <div id="collaboration" class="flex-container">
+        <span>
+          <img src="images/tools-icons/leave-note.png" onclick="toolSelect(event, 'Leave Note')"/>
+          <p>Leave Note</p>
+        </span>
+        <span>
+          <img src="images/tools-icons/highlight-section.png" onclick="toolSelect(event, 'Highlight Section')"/>
+          <p>Highlight Section</p>
+        </span>
+      </div>
+    </div>
+    <div id="Share" class="tabcontent">
+      <table align="center">
+        <tr>
+          <td>
+            <select>
+              <option>MP4</option>
+              <option>MKV</option>
+              <option>MPEG-2</option>
+              <option>MPEG-4</option>
+              <option>AV1</option>
+            </select>
+          </td>
+          <td><a class="button" href="dummy.txt" download>Export</a></td>
+        </tr>
+      </table>
+      <p align="center">Share your video</p>
+      <hr>
+      <table>
+        <tr>
+          <td align="center"><a href="http://www.youtube.com"><img src="youtube.png" width="50%"></a></td>
+          <td align="center"><a href="http://www.facebook.com"><img src="facebook.png" width="50%"></a></td>
+          <td align="center"><a href="http://www.instagram.com"><img src="instagram.png" width="50%"></a></td>
+        </tr>
+        <tr>
+          <td align="center"><a href="http://www.dropbox.com"><img src="dropbox.png" width="50%"></a></td>
+          <td align="center"><a href="http://www.google.com"><img src="googledrive.png" width="50%"></a></td>
+          <td align="center"><img src="textbubble.png" width="50%"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="Chat" class="tabcontent">
+      <textarea id="chat-box" readonly></textarea>
+      <div id="text-box">
+        <input type="text" id="text-area" placeholder="  Say something...">
+        <button id="send-button" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="right"></div>
+  <div class="middle"></div>
+  <div id="top-bar" class="top-bar"></div>
+  <div class="bar-spacing"></div>
+  <div id="bottom-bar" class="bottom-bar"></div>
+  <div class="scrollbar-spacing"></div>
+  <div id="scrollbar" class="scrollbar"></div>
+  <div class="footer"></div>
+</div>
+</body>
 </html>

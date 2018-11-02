@@ -1,71 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="script.js"></script>
-</head>
-
-<body>
-<div class="homepage">
-  <div class="header"></div>
-  <div class="left"></div>
-  <div id="video-container" class="video"></div>
-  <div class="center"></div>
-  <div class="toolbar">
-    <div class="tabs">
-      <button class="tablinks active" onclick="openTab(event, 'Videos')">Videos</button>
-      <button class="tablinks" onclick="openTab(event, 'Tools')">Tools</button>
-      <button class="tablinks" onclick="openTab(event, 'Share')">Share</button>
-      <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
-    </div>
-    <div id="Videos" class="tabcontent"></div>
-    <div id="Tools" class="tabcontent"></div>
-    <div id="Share" class="tabcontent">
-      <table align="center" style="padding-top: 15px;">
-        <tr>
-          <td>
-            <select>
-              <option>MP4</option>
-              <option>MKV</option>
-              <option>MPEG-2</option>
-              <option>MPEG-4</option>
-              <option>AV1</option>
-            </select>
-          </td>
-          <td><a class="button" href="dummy.txt" download>Export</a></td>
-        </tr>
-      </table>
-      <p align="center">Share your video</p>
-      <hr>
-      <table>
-        <tr>
-          <td align="center"><a href="http://www.youtube.com"><img src="youtube.png" width="50%"></a></td>
-          <td align="center"><a href="http://www.facebook.com"><img src="facebook.png" width="50%"></a></td>
-          <td align="center"><a href="http://www.instagram.com"><img src="instagram.png" width="50%"></a></td>
-        </tr>
-        <tr>
-          <td align="center"><a href="http://www.dropbox.com"><img src="dropbox.png" width="50%"></a></td>
-          <td align="center"><a href="http://www.google.com"><img src="googledrive.png" width="50%"></a></td>
-          <td align="center"><img src="textbubble.png" width="50%"></td>
-        </tr>
-      </table>
-    </div>
-    <div id="Chat" class="tabcontent">
-      <textarea id="chat-box" readonly></textarea>
-      <div id="text-box">
-        <input type="text" id="text-area" placeholder="  Say something...">
-        <button id="send-button" onclick="sendMessage()">Send</button>
-      </div>
-    </div>
-  </div>
-  <div class="right"></div>
-  <div class="middle"></div>
-  <div id="top-bar" class="top-bar"></div>
-  <div class="bar-spacing"></div>
-  <div id="bottom-bar" class="bottom-bar"></div>
-  <div class="scrollbar-spacing"></div>
-  <div id="scrollbar" class="scrollbar"></div>
-  <div class="footer"></div>
-</div>
-</body>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+            <script src="script.js" type="text/javascript">
+            </script>
+        </link>
+    </head>
+    <body>
+        <div class="homepage">
+            <div class="header">
+            </div>
+            <div class="left">
+            </div>
+            <div class="video" id="video-container">
+            </div>
+            <div class="center">
+            </div>
+            <div class="toolbar">
+                <div class="tabs">
+                    <button class="tablinks active" onclick="openTab(event, 'Videos')">
+                        Videos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'Tools')">
+                        Tools
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'Share')">
+                        Share
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'Chat')">
+                        Chat
+                    </button>
+                </div>
+                <div class="tabcontent" id="Videos">
+                    <div id="videoUtils">
+                        <a href="#" onclick="addVideo()">
+                            +
+                        </a>
+                        <input name="search" type="text">
+                        </input>
+                    </div>
+                    <div class="videoDIV">
+                        <img src=""/>
+                        <p class="name">
+                            walking_in_roses
+                        </p>
+                        <p class="length">
+                            4:11
+                        </p>
+                        <p class="date">
+                            June 16th, 2018
+                            <p>
+                                <p class="size">
+                                    4mb
+                                </p>
+                            </p>
+                        </p>
+                    </div>
+              </div>
+                    <div class="tabcontent" id="Tools">
+                    </div>
+                    <div class="tabcontent" id="Share">
+                        <table align="center" style="padding-top: 15px;">
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option>
+                                            MP4
+                                        </option>
+                                        <option>
+                                            MKV
+                                        </option>
+                                        <option>
+                                            MPEG-2
+                                        </option>
+                                        <option>
+                                            MPEG-4
+                                        </option>
+                                        <option>
+                                            AV1
+                                        </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <a class="button" download="" href="dummy.txt">
+                                        Export
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p align="center">
+                            Share your video
+                        </p>
+                        <hr>
+                            <table>
+                                <tr>
+                                    <td align="center">
+                                        <a href="http://www.youtube.com">
+                                            <img src="youtube.png" width="50%"/>
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <a href="http://www.facebook.com">
+                                            <img src="facebook.png" width="50%"/>
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <a href="http://www.instagram.com">
+                                            <img src="instagram.png" width="50%"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <a href="http://www.dropbox.com">
+                                            <img src="dropbox.png" width="50%"/>
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <a href="http://www.google.com">
+                                            <img src="googledrive.png" width="50%"/>
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <img src="textbubble.png" width="50%"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </hr>
+                    </div>
+                    <div class="tabcontent" id="Chat">
+                        <textarea id="chat-box" readonly="">
+                        </textarea>
+                        <div id="text-box">
+                            <input id="text-area" placeholder="  Say something..." type="text">
+                                <button id="send-button" onclick="sendMessage()">
+                                    Send
+                                </button>
+                            </input>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+                <div class="middle">
+                </div>
+                <div class="top-bar" id="top-bar">
+                </div>
+                <div class="bar-spacing">
+                </div>
+                <div class="bottom-bar" id="bottom-bar">
+                </div>
+                <div class="scrollbar-spacing">
+                </div>
+                <div class="scrollbar" id="scrollbar">
+                </div>
+                <div class="footer">
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

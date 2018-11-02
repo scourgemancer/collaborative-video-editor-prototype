@@ -51,10 +51,10 @@
       </table>
     </div>
     <div id="Chat" class="tabcontent">
-      <div id="chat-box"></div>
+      <textarea id="chat-box" readonly></textarea>
       <div id="text-box">
         <input type="text" id="text-area" placeholder="Say something...">
-        <button id="send-button">Send</button>
+        <button id="send-button" onclick="sendMessage()">Send</button>
       </div>
     </div>
   </div>

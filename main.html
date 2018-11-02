@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<p id="notification"></p>
 <div class="homepage">
   <div class="header"></div>
   <div class="left"></div>
@@ -19,7 +20,37 @@
       <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
     </div>
     <div id="Videos" class="tabcontent"></div>
-    <div id="Tools" class="tabcontent"></div>
+    <div id="Tools" class="tabcontent">
+      <p>General Editing</p>
+      <div id="general-editing" class="flex-container">
+        <img src="images/tools-icons/filter.png" onclick="toolSelect(event, 'Filter')"/>
+        <img src="images/tools-icons/cut.png" onclick="toolSelect(event, 'Cut')"/>
+        <img src="images/tools-icons/shrink-stretch.png" onclick="toolSelect(event, 'Shrink / Stretch')"/>
+        <img src="images/tools-icons/crop.png" onclick="toolSelect(event, 'Crop')"/>
+        <img src="images/tools-icons/slow-down.png" onclick="toolSelect(event, 'Slow Down')"/>
+        <img src="images/tools-icons/speed-up.png" onclick="toolSelect(event, 'Speed Up')"/>
+      </div>
+      <hr>
+      <p>Selecting</p>
+      <div id="selecting" class="flex-container">
+        <img src="images/tools-icons/rectangle-select.png" onclick="toolSelect(event, 'Rectangle Select')"/>
+        <img src="images/tools-icons/lasso-select.png" onclick="toolSelect(event, 'Lasso Select')"/>
+        <img src="images/tools-icons/wand-select.png" onclick="toolSelect(event, 'Wand Select')"/>
+        <img src="images/tools-icons/oval-select.png" onclick="toolSelect(event, 'Oval Select')"/>
+      </div>
+      <hr>
+      <p>Adding to Video</p>
+      <div id="adding-to-video" class="flex-container">
+        <img src="images/tools-icons/add-text.png" onclick="toolSelect(event, 'Add Text')"/>
+        <img src="images/tools-icons/add-image.png" onclick="toolSelect(event, 'Add Image')"/>
+      </div>
+      <hr>
+      <p>Collaboration</p>
+      <div id="collaboration" class="flex-container">
+        <img src="images/tools-icons/leave-note.png" onclick="toolSelect(event, 'Leave Note')"/>
+        <img src="images/tools-icons/highlight-section.png" onclick="toolSelect(event, 'Highlight Section')"/>
+      </div>
+    </div>
     <div id="Share" class="tabcontent">
       <table align="center" style="padding-top: 15px;">
         <tr>

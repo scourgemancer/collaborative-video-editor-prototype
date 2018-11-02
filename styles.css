@@ -6,6 +6,36 @@ html, body {
   overflow: hidden;
 }
 
+
+#notification {
+  z-index: -1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #4A5561;
+  font-size: 1.4em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+@keyframes notifyOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.notify {
+  animation-name: notifyOpacity;
+  animation-iteration-count: 1;
+  animation-duration: 0.4s;
+}
+
 /*Defines the width and height of all elements*/
 .homepage {
   display: grid;
@@ -114,6 +144,7 @@ html, body {
   display: none;
   width: 100%;
   height: calc(100% - 2.5em);
+  overflow: hidden;
 }
 
 /*Videos tab*/
@@ -127,9 +158,22 @@ html, body {
 /*Tools tab*/
 #Tools {
   display: none;
-  background-image: url("tools.PNG");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+}
+#Tools p {
+  margin-left: 1em;
+  color: #48535f;
+  margin: 1em 0 0.3em 1em;
+}
+#Tools .flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 1em;
+}
+#Tools img {
+  height: 2.8em;
+  width: 2.8em;
+  margin-left: 1em;
+  cursor: pointer;
 }
 
 /*Share tab*/
@@ -168,6 +212,7 @@ html, body {
   height: calc(93% - 4em);
   margin: 4% 5% 2% 5%;
   border-radius: 0.8em;
+  line-height: 1.4em;
 }
 #Chat #text-box #text-area{
   width: calc(90% - 5em);

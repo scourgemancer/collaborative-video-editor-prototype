@@ -132,6 +132,6 @@ function toolSelect(event, name) {
 function sendMessage() {
   var text = document.getElementById("text-area");
   var textbox = document.getElementById("chat-box");
-  textbox.value = textbox.value + "Me: " + text.value + "\n\n";
+  textbox.value = textbox.value + "Me: " + text.value + "\n";
   text.value = "";
 }

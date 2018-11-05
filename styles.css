@@ -272,7 +272,7 @@ html, body {
   height: calc(93% - 4em);
   margin: 4% 5% 2% 5%;
   border-radius: 0.8em;
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 #Chat #text-box #text-area{
   width: calc(90% - 5em);

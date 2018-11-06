@@ -19,9 +19,9 @@ function openTab(event, tabName) {
   document.getElementById(tabName).style.display = "block";
 }
 function addVideo(){
-  var videoDiv = document.getElementById("Videos");
+  var videoDiv = document.getElementById("VideoDivs");
   var newVid =document.createElement("div");
-  newVid.className = "videoDIV";
+  newVid.className = "videoDiv";
   var vidName = document.createElement("p");
   vidName.innerHTML="new video";
   vidName.className = "name";
@@ -34,14 +34,14 @@ function addVideo(){
     var vidSize = document.createElement("p");
   vidSize.innerHTML="3 MB";
   vidSize.className = "size";
-var vidImage = document.createElement("IMG");
-vidImage.src="https://image.shutterstock.com/image-photo/funny-man-watermelon-helmet-googles-450w-157354478.jpg";
-newVid.appendChild(vidImage);
-newVid.appendChild(vidName);
-newVid.appendChild(vidLength);
-newVid.appendChild(vidDate);
-newVid.appendChild(vidSize);
-videoDiv.appendChild(newVid);
+  var vidImage = document.createElement("IMG");
+  vidImage.src="https://image.shutterstock.com/image-photo/funny-man-watermelon-helmet-googles-450w-157354478.jpg";
+  newVid.appendChild(vidImage);
+  newVid.appendChild(vidName);
+  newVid.appendChild(vidLength);
+  newVid.appendChild(vidDate);
+  newVid.appendChild(vidSize);
+  videoDiv.appendChild(newVid);
 }
 /*Create all of the starting content for the tabs*/
 function initializeTabs() {

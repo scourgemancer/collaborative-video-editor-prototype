@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 
@@ -62,6 +61,7 @@ html, body {
 .toolbar {
   border: 1px solid #555;
   color: #AAA;
+  overflow: hidden;
 }
 
 /*Spacing on the right*/
@@ -145,7 +145,6 @@ html, body {
   display: block;
   height: calc(100% - 2.5em);
   width: 100%;
-  overflow-y: scroll;
 }
 #videoUtils {
   width: 100%;
@@ -164,35 +163,44 @@ html, body {
   margin: 0 2% 0 6%;
   text-decoration: none;
 }
-.videoDIV {
+#ScrollableVideos {
+  display: flex;
+  flex-direction: column;
+  max-height: 90%;
+}
+#VideoDivs {
+  max-height: inherit;
+  overflow-y: auto;
+}
+.videoDiv {
   width: 90%;
   height: 6em;
   margin: 10px 5%;
   border: 1px solid #99a4b5;
   overflow: hidden;
 }
-.videoDIV img {
+.videoDiv img {
   width: 5.6em;
   height: 4.3em;
   position: relative;
   left: 0.5em;
   top: 0.7em;
 }
-.videoDIV p {
+.videoDiv p {
   color: #505b66;
   position: relative;
   left: 7em;
 }
-.videoDIV .name {
+.videoDiv .name {
   top: -5em;
 }
-.videoDIV .length {
+.videoDiv .length {
   top: -6em;
 }
-.videoDIV .date {
+.videoDiv .date {
   top: -7em;
 }
-.videoDIV .size {
+.videoDiv .size {
   top: -8em;
   margin-bottom: 0;
 }

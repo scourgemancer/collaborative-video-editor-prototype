@@ -51,7 +51,7 @@ html, body {
 /*Video container*/
 .video {
   background: #444;
-  background-image: url("images/video.png");
+  background-image: url("images/video.PNG");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

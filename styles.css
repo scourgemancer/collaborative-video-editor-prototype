@@ -166,7 +166,7 @@ html, body {
 #ScrollableVideos {
   display: flex;
   flex-direction: column;
-  max-height: 90%;
+  max-height: 100%;
 }
 #VideoDivs {
   max-height: inherit;

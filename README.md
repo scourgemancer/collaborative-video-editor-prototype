@@ -1,22 +1,21 @@
 # README Collaborative Video Editor
-SWEN-444 Prototype project of an online video editor that allows groups to collaborate on editing videos. We are currently working on the beta version of the prototype. There is no need for any installations. You will need an up-to-date browser, preferably Chrome or Firefox, and an optional text editor. All you need to do is click on the main.html file and it will open up the beta version of the product prototype. There are no backend, only front-end. 
+A group project for SWEN-444 of a prototype for an online video editor that allows groups to collaborate on editing videos.
+No instalation is required! The index.html file just needs to be opened in a modern web browser, such as Chrome or Firefox.
 
 Implemented functionalities include:
-1. Send a chat message, and see it appears on the chatbox.
-2. Choose export format, export platform, and exportation.
-3. Add a video.
-4. See a variety of edit tools. Tool labels will be revealed when hovered.
+1. Sending chat messages, which appear in the chatbox.
+2. Sharing videos to social media or saving them to your device.
+3. Adding new videos.
+4. Selecting tools to edit videos with. Each tool's name appears when their icon is hovered over.
 
 Unsupported features:
-1. Responsive design
-2. Add a real video
-3. Networking in chat and video editing (very high sophistication)
-4. Export a real video
-5. Export a video to a real social platform
-6. Usable edit tools
-7. 3 or more videos added can lead to modified interface
-8. Play or pause a video
-9. See video timeline, and audio timeline
-10. Search for videos
+1. Adding a video that's new to the system.
+2. Allowing groups to see each other's chat messages.
+3. Exporting the selected video.
+4. Sharing videos directly through social media instead of simple linking to their websites.
+5. Functional editing tools.
+6. Playing or pausing a video.
+7. Seeing the selected video's timeline or audio timeline.
+8. Searching for specific videos.
 
-This is a pretty sophisticated product if the all the real functionalities are implemented. The purpose of this prototype is to show the user interface purely. Functionalities may be added in the final prototypes.
+This project is not intended to be completed as a functional product. Our intent is only to produce a high-fidelity prototype so that we can evaluate it's theoretical user interface and experience.

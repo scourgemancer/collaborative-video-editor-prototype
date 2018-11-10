@@ -166,7 +166,7 @@ html, body {
 #ScrollableVideos {
   display: flex;
   flex-direction: column;
-  max-height: 89%;
+  max-height: calc(100% - 2.8em);
   max-width: 99%;
 }
 #VideoDivs {

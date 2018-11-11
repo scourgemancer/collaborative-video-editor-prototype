@@ -278,7 +278,7 @@ html, body {
 #Chat #chat-box {
   border: 1px solid #8492a6;
   width: 90%;
-  height: calc(93% - 4em);
+  height: calc(100% - 6em);
   margin: 4% 5% 2% 5%;
   border-radius: 0.8em;
   line-height: 1.8em;

@@ -151,11 +151,27 @@ html, body {
   height: 1.8em;
   margin-top: 0.9em;
 }
+#videoUtils span {
+  position: relative;
+}
+#videoUtils span p {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  color: white;
+  border-radius: 0.6em;
+  padding: 0.5em;
+
+}
+#videoUtils span a:hover+p {
+  visibility: visible;
+}
 #videoUtils #search {
   width: calc(92% - 4em);
 }
 #videoUtils a {
-  padding: 0.4em 0.7em;
+  padding: 0.5em 0.8em;
   border-radius: 2em;
   background-color: #31af91;
   color: white;
@@ -229,6 +245,7 @@ html, body {
 #Tools span {
   position: relative;
 }
+
 #Tools span p {
   visibility: hidden;
   position: absolute;

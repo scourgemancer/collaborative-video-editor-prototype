@@ -7,6 +7,7 @@ Implemented functionalities include:
 2. Sharing videos to social media or saving them to your device.
 3. Adding new videos.
 4. Selecting tools to edit videos with. Each tool's name appears when their icon is hovered over.
+5. Export videos in specific formats.
 
 Unsupported features:
 1. Adding a video that's new to the system.
